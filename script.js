@@ -127,4 +127,3 @@ var window = {
     }
 }
 */
-var kutya;
