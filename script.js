@@ -35,10 +35,10 @@ console.log(c);
 
 function add(firstNumber, secondNumber) {
     if (firstNumber > 0) {
-        console.log("Az első szám nagyobb, mint 0.")
+        console.log("Az első szám nagyobb, mint 0.");
     }
     else {
-        console.log("Az első szám kisebb vagy egyenlő 0.")
+        console.log("Az első szám kisebb vagy egyenlő 0.");
     }
     console.log(firstNumber + secondNumber);
 }
@@ -49,13 +49,13 @@ add(17948, 679);
 
 function substract(firstNumber, secondNumber) {
     if (firstNumber > secondNumber) {
-        console.log(firstNumber - secondNumber)
+        console.log(firstNumber - secondNumber);
     }
     else if (secondNumber > firstNumber) {
-        console.log(secondNumber - firstNumber)
+        console.log(secondNumber - firstNumber);
     }
     else {
-        console.log("The two numbers are the same.")
+        console.log("The two numbers are the same.");
     }
 }
 
@@ -64,14 +64,14 @@ substract(50, 50);
 
 function ifElseCheck(text) {
     if (text === "Hello") {
-        console.log("A text az volt, hogy Hello.")
+        console.log("A text az volt, hogy Hello.");
     }
     else if(text === "Hello") {
-        console.log("Második if else ág.")
+        console.log("Második if else ág.");
     }
 
     if (text === "Hello") {
-        console.log("Ez egy másik if vizsgálat.")
+        console.log("Ez egy másik if vizsgálat.");
     }
 }
 
@@ -94,14 +94,14 @@ compare(7, 7);
 compare(myFirstArray[0], mySecondArray[0]);
 
 var myFirstFunctionVariable = function () {
-    console.log("Ez egy függvény, amit változóban tároltunk el.")
+    console.log("Ez egy függvény, amit változóban tároltunk el.");
 }
 
 myFirstFunctionVariable();
 
 (function (text) {
     console.log("Ezt a függvényt egyből meghívtuk, amikor leírtuk.");
-    console.log(text)
+    console.log(text);
 }("Bye"));
 
 var mySecondFunctionVariable = function () {
@@ -114,7 +114,7 @@ anotherVar();
 
 var theLastFunction = function (text) {
     console.log(typeof text);
-    console.log(text())
+    console.log(text());
 }
 
 theLastFunction(function () {
