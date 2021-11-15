@@ -1,3 +1,7 @@
+window.addEventListener("load", function () {
+    console.log("Az oldal betöltődött.");
+})
+
 var myFirstString = 'Ez egy string.';
 var mySecondString = "Ez is egy string.";
 var myThirdString = `Ez pedig egy többsoros string.`;
@@ -57,3 +61,69 @@ function substract(firstNumber, secondNumber) {
 
 substract(100, 25);
 substract(50, 50);
+
+function ifElseCheck(text) {
+    if (text === "Hello") {
+        console.log("A text az volt, hogy Hello.")
+    }
+    else if(text === "Hello") {
+        console.log("Második if else ág.")
+    }
+
+    if (text === "Hello") {
+        console.log("Ez egy másik if vizsgálat.")
+    }
+}
+
+ifElseCheck("Hello");
+
+function compare(a, b) {
+    console.log("== ", a == b);
+    console.log("=== ", a === b);
+    var c = b + a;
+    console.log(typeof c);
+    console.log(c);
+}
+
+compare("1984", 1984);
+
+compare("Nyitva", "tartás");
+
+compare(7, 7);
+
+compare(myFirstArray[0], mySecondArray[0]);
+
+var myFirstFunctionVariable = function () {
+    console.log("Ez egy függvény, amit változóban tároltunk el.")
+}
+
+myFirstFunctionVariable();
+
+(function (text) {
+    console.log("Ezt a függvényt egyből meghívtuk, amikor leírtuk.");
+    console.log(text)
+}("Bye"));
+
+var mySecondFunctionVariable = function () {
+    console.log("Ez vajon mikor fut le?");
+}
+
+var anotherVar = mySecondFunctionVariable;
+
+anotherVar();
+
+var theLastFunction = function (text) {
+    console.log(typeof text);
+    console.log(text())
+}
+
+theLastFunction(function () {
+    return "I'm calling the last function."
+})
+/*
+var window = {
+    addEventListener: function (eventName, eventFunction) {
+
+    }
+}
+*/
