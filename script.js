@@ -127,4 +127,4 @@ var window = {
     }
 }
 */
-var tekn;
+var kutya;
