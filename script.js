@@ -193,3 +193,63 @@ function f5() {
     //console.log(b);
 }
 f5();
+
+function f6() {
+    let c = "";
+    console.log(c);
+    console.log(typeof c);
+    console.log("valami" + c);
+    if (true) {
+        let d = 9;
+        const e =10;
+        console.log(d, e);
+    }
+}
+f6();
+
+function f7() {
+    //console.log(i);
+    let ls = ["a", "b", "c", "d", "e", "f", true];
+    //console.log(ls[0]);
+    //console.log(ls[4]);
+    
+    for (let i = 0; i < ls.length; i++) {
+        const item = ls[i];
+        console.log(item);
+        
+    }
+    //console.log(i);
+    
+    for (const item of ls) {
+        console.log(item);
+    }
+    
+    for (const key in ls) {
+        console.log(key);
+        const item = ls[key];
+        console.log(item);
+    }
+    console.log(f8(ls));
+}
+f7();
+
+function f8(arrayFromParam) {
+    let abc = "";
+    for (const item of arrayFromParam) {
+        if (item !== true) {
+            abc += item;
+        }
+    }
+    return abc;
+}
+
+const f9 = (text) => {
+    return `<div>${text}</div>`
+}
+
+window.addEventListener("load", function() {
+    let f8Result = f8(["10", "17", "38", "11"])
+    document.getElementById("root").insertAdjacentHTML("afterbegin", f8Result);
+    document.getElementById("root").insertAdjacentHTML("afterbegin", f9("tuesday"));
+    
+})
