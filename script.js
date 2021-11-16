@@ -243,9 +243,8 @@ function f8(arrayFromParam) {
     return abc;
 }
 
-const f9 = (text) => {
-    return `<div>${text}</div>`
-}
+const f9 = text => `<div>${text}</div>`;
+console.log(f9("Hello"));
 
 window.addEventListener("load", function() {
     let f8Result = f8(["10", "17", "38", "11"])
