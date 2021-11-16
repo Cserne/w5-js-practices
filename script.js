@@ -1,4 +1,4 @@
-window.addEventListener("load", function () {
+/*window.addEventListener("load", function () {
     console.log("Az oldal betöltődött.");
 })
 
@@ -119,7 +119,9 @@ var theLastFunction = function (text) {
 
 theLastFunction(function () {
     return "I'm calling the last function."
-})
+});
+*/
+
 /*
 var window = {
     addEventListener: function (eventName, eventFunction) {
