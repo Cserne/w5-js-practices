@@ -1,3 +1,4 @@
+console.log(myFirstGlobalVar);
 /*window.addEventListener("load", function () {
     console.log("Az oldal betöltődött.");
 })
@@ -129,3 +130,66 @@ var window = {
     }
 }
 */
+
+var myFirstGlobalVar = 0;
+
+//console.log(mySecondGlobalVar);
+let mySecondGlobalVar = 1;
+
+//console.log(myThirdGlobalVar);
+const myThirdGlobalVar = 2;
+(function() {
+    (function() {
+        (function() {
+            var a = 3;
+            console.log(a);
+        }())
+    }())
+}())
+console.log(myFirstGlobalVar, mySecondGlobalVar, myThirdGlobalVar);
+
+var a = 6;
+function f1() {
+    var a = "undefined";
+    console.log(a);
+    a = 4;
+    console.log(a);
+    /*console.log(myFirstGlobalVar, mySecondGlobalVar, myThirdGlobalVar);*/
+}
+f1();
+
+function f2() {
+    console.log(a);
+    var a = 5;
+    console.log(a);
+    /*console.log(myFirstGlobalVar, mySecondGlobalVar, myThirdGlobalVar);*/
+}
+f2();
+console.log(a);
+
+function f3() {
+    console.log(b);
+    var b;
+    console.log(b);
+    b = 7;
+    console.log(b);
+}
+f3();
+
+function f4() {
+    //console.log(b);
+    let b;
+    console.log(b);
+    b = 7;
+    console.log(b);
+}
+f4();
+
+function f5() {
+    //console.log(b);
+    const b = 7;
+    console.log(b);
+    //b = 8;
+    //console.log(b);
+}
+f5();
